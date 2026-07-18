@@ -1,0 +1,529 @@
+{
+  "model_type": "mvib_seq2seq_final",
+  "mode": "full_face",
+  "model_mode": "seq2seq",
+  "teacher_forcing": 0.0,
+  "active_views": {
+    "raw": true,
+    "rp": true,
+    "mouth": true,
+    "eyes": true,
+    "jaw": true,
+    "head": true,
+    "lip_area": true,
+    "asymmetry": true
+  },
+  "history": [
+    {
+      "epoch": 601,
+      "train_loss": 0.3751266207738021,
+      "train_wer": 0.0,
+      "train_cer": 0.0,
+      "train_letter_accuracy": 1.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:39:44.390984"
+    },
+    {
+      "epoch": 602,
+      "train_loss": 0.373779054308675,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.19298245614035087,
+      "train_letter_accuracy": 0.8070175438596492,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:40:23.867380"
+    },
+    {
+      "epoch": 603,
+      "train_loss": 0.37372960472844313,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.22807017543859648,
+      "train_letter_accuracy": 0.8245614035087719,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:41:03.009725"
+    },
+    {
+      "epoch": 604,
+      "train_loss": 0.3708787429885766,
+      "train_wer": 0.10526315789473684,
+      "train_cer": 0.08771929824561403,
+      "train_letter_accuracy": 0.9122807017543861,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:41:42.383623"
+    },
+    {
+      "epoch": 605,
+      "train_loss": 0.36850515576367526,
+      "train_wer": 0.15789473684210525,
+      "train_cer": 0.15789473684210525,
+      "train_letter_accuracy": 0.8421052631578947,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:42:21.822412"
+    },
+    {
+      "epoch": 606,
+      "train_loss": 0.3716729565994027,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.2807017543859649,
+      "train_letter_accuracy": 0.7719298245614035,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:43:01.212587"
+    },
+    {
+      "epoch": 607,
+      "train_loss": 0.3738599219887527,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.1754385964912281,
+      "train_letter_accuracy": 0.8771929824561404,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:43:40.736932"
+    },
+    {
+      "epoch": 608,
+      "train_loss": 0.3753471992064997,
+      "train_wer": 0.3157894736842105,
+      "train_cer": 0.23684210526315785,
+      "train_letter_accuracy": 0.7894736842105262,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:44:19.895559"
+    },
+    {
+      "epoch": 609,
+      "train_loss": 0.37096334471530523,
+      "train_wer": 0.3157894736842105,
+      "train_cer": 0.22807017543859648,
+      "train_letter_accuracy": 0.7719298245614035,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:44:59.300506"
+    },
+    {
+      "epoch": 610,
+      "train_loss": 0.3675648464062779,
+      "train_wer": 0.10526315789473684,
+      "train_cer": 0.08771929824561403,
+      "train_letter_accuracy": 0.9122807017543861,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:45:38.589309"
+    },
+    {
+      "epoch": 611,
+      "train_loss": 0.3718056167216645,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.1754385964912281,
+      "train_letter_accuracy": 0.8245614035087719,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:46:17.933778"
+    },
+    {
+      "epoch": 612,
+      "train_loss": 0.3702308770614801,
+      "train_wer": 0.3157894736842105,
+      "train_cer": 0.2807017543859649,
+      "train_letter_accuracy": 0.7456140350877193,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:46:58.777484"
+    },
+    {
+      "epoch": 613,
+      "train_loss": 0.3660324857253389,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.2894736842105263,
+      "train_letter_accuracy": 0.7368421052631579,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:47:41.946787"
+    },
+    {
+      "epoch": 614,
+      "train_loss": 0.36884356635747495,
+      "train_wer": 0.10526315789473684,
+      "train_cer": 0.10526315789473684,
+      "train_letter_accuracy": 0.8947368421052632,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:48:25.588083"
+    },
+    {
+      "epoch": 615,
+      "train_loss": 0.37143211089765904,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.20175438596491227,
+      "train_letter_accuracy": 0.8245614035087719,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:49:07.837100"
+    },
+    {
+      "epoch": 616,
+      "train_loss": 0.3721976512178932,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.23684210526315788,
+      "train_letter_accuracy": 0.7894736842105263,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:49:47.443474"
+    },
+    {
+      "epoch": 617,
+      "train_loss": 0.3720504381914729,
+      "train_wer": 0.15789473684210525,
+      "train_cer": 0.15789473684210525,
+      "train_letter_accuracy": 0.8421052631578947,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:50:30.345736"
+    },
+    {
+      "epoch": 618,
+      "train_loss": 0.3694193973061965,
+      "train_wer": 0.3157894736842105,
+      "train_cer": 0.3333333333333333,
+      "train_letter_accuracy": 0.7192982456140351,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:51:12.038144"
+    },
+    {
+      "epoch": 619,
+      "train_loss": 0.3691127049093394,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.15789473684210525,
+      "train_letter_accuracy": 0.8421052631578947,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:51:57.470173"
+    },
+    {
+      "epoch": 620,
+      "train_loss": 0.3680507002263954,
+      "train_wer": 0.3684210526315789,
+      "train_cer": 0.32456140350877194,
+      "train_letter_accuracy": 0.6754385964912281,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:52:42.251617"
+    },
+    {
+      "epoch": 621,
+      "train_loss": 0.36801184667754416,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.15789473684210523,
+      "train_letter_accuracy": 0.8421052631578947,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:53:22.896383"
+    },
+    {
+      "epoch": 622,
+      "train_loss": 0.3695926752287088,
+      "train_wer": 0.15789473684210525,
+      "train_cer": 0.10526315789473684,
+      "train_letter_accuracy": 0.8947368421052632,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:54:04.433573"
+    },
+    {
+      "epoch": 623,
+      "train_loss": 0.3669762690503573,
+      "train_wer": 0.3157894736842105,
+      "train_cer": 0.2894736842105263,
+      "train_letter_accuracy": 0.7368421052631579,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:54:45.880860"
+    },
+    {
+      "epoch": 624,
+      "train_loss": 0.36596479620208444,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.18421052631578946,
+      "train_letter_accuracy": 0.8421052631578947,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:55:27.655747"
+    },
+    {
+      "epoch": 625,
+      "train_loss": 0.36950761125874276,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.22807017543859653,
+      "train_letter_accuracy": 0.7719298245614035,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:56:09.158820"
+    },
+    {
+      "epoch": 626,
+      "train_loss": 0.37277350736033055,
+      "train_wer": 0.3157894736842105,
+      "train_cer": 0.22807017543859653,
+      "train_letter_accuracy": 0.7982456140350876,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:56:51.004147"
+    },
+    {
+      "epoch": 627,
+      "train_loss": 0.36932424263855845,
+      "train_wer": 0.10526315789473684,
+      "train_cer": 0.07017543859649122,
+      "train_letter_accuracy": 0.9298245614035089,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:57:33.041778"
+    },
+    {
+      "epoch": 628,
+      "train_loss": 0.367528780833962,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.2631578947368421,
+      "train_letter_accuracy": 0.7894736842105263,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:58:15.125134"
+    },
+    {
+      "epoch": 629,
+      "train_loss": 0.3667527710654072,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.1754385964912281,
+      "train_letter_accuracy": 0.8333333333333333,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:58:56.919018"
+    },
+    {
+      "epoch": 630,
+      "train_loss": 0.36656439473334046,
+      "train_wer": 0.3157894736842105,
+      "train_cer": 0.2631578947368421,
+      "train_letter_accuracy": 0.7894736842105263,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T21:59:38.899894"
+    },
+    {
+      "epoch": 631,
+      "train_loss": 0.36663775483972016,
+      "train_wer": 0.10526315789473684,
+      "train_cer": 0.07017543859649122,
+      "train_letter_accuracy": 0.9298245614035087,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:00:20.793618"
+    },
+    {
+      "epoch": 632,
+      "train_loss": 0.36588426717777844,
+      "train_wer": 0.42105263157894735,
+      "train_cer": 0.3508771929824562,
+      "train_letter_accuracy": 0.7017543859649124,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:01:02.440739"
+    },
+    {
+      "epoch": 633,
+      "train_loss": 0.3681809937523812,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.12280701754385966,
+      "train_letter_accuracy": 0.8771929824561402,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:01:44.046505"
+    },
+    {
+      "epoch": 634,
+      "train_loss": 0.3690259902133155,
+      "train_wer": 0.3684210526315789,
+      "train_cer": 0.21929824561403505,
+      "train_letter_accuracy": 0.7807017543859649,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:02:25.892738"
+    },
+    {
+      "epoch": 635,
+      "train_loss": 0.36695861224968407,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.23684210526315788,
+      "train_letter_accuracy": 0.7894736842105263,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:03:07.410560"
+    },
+    {
+      "epoch": 636,
+      "train_loss": 0.36861682836849663,
+      "train_wer": 0.3684210526315789,
+      "train_cer": 0.2982456140350877,
+      "train_letter_accuracy": 0.7105263157894737,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:03:49.098094"
+    },
+    {
+      "epoch": 637,
+      "train_loss": 0.36795755560250626,
+      "train_wer": 0.10526315789473684,
+      "train_cer": 0.08771929824561403,
+      "train_letter_accuracy": 0.9122807017543859,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:04:31.008724"
+    },
+    {
+      "epoch": 638,
+      "train_loss": 0.3644153479601919,
+      "train_wer": 0.42105263157894735,
+      "train_cer": 0.3157894736842105,
+      "train_letter_accuracy": 0.6842105263157895,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:05:12.789945"
+    },
+    {
+      "epoch": 639,
+      "train_loss": 0.3661721303444548,
+      "train_wer": 0.3684210526315789,
+      "train_cer": 0.34210526315789475,
+      "train_letter_accuracy": 0.6842105263157895,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:05:54.328550"
+    },
+    {
+      "epoch": 640,
+      "train_loss": 0.36429610218583924,
+      "train_wer": 0.3157894736842105,
+      "train_cer": 0.35964912280701755,
+      "train_letter_accuracy": 0.7192982456140351,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:06:35.931454"
+    },
+    {
+      "epoch": 641,
+      "train_loss": 0.36640616222140715,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.25438596491228066,
+      "train_letter_accuracy": 0.7719298245614036,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:07:17.534324"
+    },
+    {
+      "epoch": 642,
+      "train_loss": 0.36619275178491456,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.17543859649122806,
+      "train_letter_accuracy": 0.8245614035087719,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:07:59.527216"
+    },
+    {
+      "epoch": 643,
+      "train_loss": 0.36375499240209147,
+      "train_wer": 0.21052631578947367,
+      "train_cer": 0.23684210526315788,
+      "train_letter_accuracy": 0.7894736842105263,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:08:41.433034"
+    },
+    {
+      "epoch": 644,
+      "train_loss": 0.36350207353375624,
+      "train_wer": 0.0,
+      "train_cer": 0.0,
+      "train_letter_accuracy": 1.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:09:23.280140"
+    },
+    {
+      "epoch": 645,
+      "train_loss": 0.3654286455862301,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.18421052631578946,
+      "train_letter_accuracy": 0.8157894736842105,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:10:04.995113"
+    },
+    {
+      "epoch": 646,
+      "train_loss": 0.36852743561120377,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.19298245614035087,
+      "train_letter_accuracy": 0.8070175438596491,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:10:46.668157"
+    },
+    {
+      "epoch": 647,
+      "train_loss": 0.3633041578469817,
+      "train_wer": 0.3684210526315789,
+      "train_cer": 0.34210526315789475,
+      "train_letter_accuracy": 0.6842105263157895,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:11:28.335771"
+    },
+    {
+      "epoch": 648,
+      "train_loss": 0.36371462039419056,
+      "train_wer": 0.2631578947368421,
+      "train_cer": 0.2543859649122807,
+      "train_letter_accuracy": 0.7719298245614035,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:12:08.993950"
+    },
+    {
+      "epoch": 649,
+      "train_loss": 0.3610313099991415,
+      "train_wer": 0.3157894736842105,
+      "train_cer": 0.34210526315789475,
+      "train_letter_accuracy": 0.7105263157894737,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:12:51.601184"
+    },
+    {
+      "epoch": 650,
+      "train_loss": 0.36566978216785745,
+      "train_wer": 0.42105263157894735,
+      "train_cer": 0.32456140350877194,
+      "train_letter_accuracy": 0.6754385964912281,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-10T22:13:34.031189"
+    }
+  ],
+  "config": {
+    "hidden_size": 128,
+    "batch_size": 256,
+    "learning_rate": 0.0003,
+    "dropout": 0.3,
+    "use_fp16": true,
+    "use_torch_compile": false,
+    "grad_clip": 1.0,
+    "label_prior_weight": 0.0,
+    "teacher_forcing": 0.0
+  }
+}
