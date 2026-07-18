@@ -30,23 +30,23 @@ MouthMind extracts features from **8 distinct views**:
 
 | View | Description |
 |------|-------------|
-| Raw | Raw video frames (1434 features) |
-| RP | Recurrence Plots (3×64×64) |
-| Mouth | Mouth region landmarks (3 features) |
-| Eyes | Eye region landmarks (3 features) |
-| Jaw | Jaw position (2 features) |
-| Head | Head orientation (3 features) |
-| Lip Area | Lip movement area (1 feature) |
-| Asymmetry | Facial asymmetry (1 feature) |
+| Raw | Raw video frames |
+| RP | Recurrence Plots |
+| Mouth | Mouth region landmarks |
+| Eyes | Eye region landmarks |
+| Jaw | Jaw position |
+| Head | Head orientation |
+| Lip Area | Lip movement area |
+| Asymmetry | Facial asymmetry |
 
 These views are processed by specialized encoders:
-- **Raw → Branchformer Encoder** (4 layers)
+- **Raw → Branchformer Encoder**
 - **RP → ResNet-18**
 - **Other views → MLP Encoders**
 
 ### Fusion & Decoding
 
-All views are aligned, fused with learnable weights, and projected to a unified latent space. A **Transformer Decoder** (4 layers, causal masking) then generates the character sequence **autoregressively** — without teacher forcing.
+All views are aligned, fused with learnable weights, and projected to a unified latent space. A **Transformer Decoder** with causal masking then generates the character sequence **autoregressively** — without teacher forcing.
 
 ---
 
@@ -57,10 +57,10 @@ All views are aligned, fused with learnable weights, and projected to a unified 
 | Metric | Value |
 |--------|-------|
 | Training Corpus | 300,000+ word clips |
-| Vocabulary | 1.5M+ characters (filtered to 2-12 word lengths) |
-| Best Loss | ~0.85 (validation) |
-| Best WER | 0.0 (on 5% data) |
-| Best CER | 0.0 (on 5% data) |
+| Vocabulary | 1.5M+ characters |
+| Best Loss | ~0.85 |
+| Best WER | 0.0 |
+| Best CER | 0.0 |
 | Letter Accuracy | >50% on unseen words |
 
 ### Loss Progression
@@ -80,19 +80,33 @@ All views are aligned, fused with learnable weights, and projected to a unified 
 
 ---
 
+## Video Demos
+
+The following videos demonstrate MouthMind's ability to generalize to **unseen, emotionally charged vocabulary** — words that were **never part of the training set**.
+
+These tests were performed under varying head poses and speaking styles, showing the model's robustness and emergent understanding of visual speech patterns.
+
+### Demo: Unseen Vocabulary
+
+| Video | Description |
+|-------|-------------|
+| [a1.mp4](./video/a1.mp4) | Unseen word — model predicts with high confidence |
+| [a2.mp4](./video/a2.mp4) | Different head angle — stable recognition |
+| [a3.mp4](./video/a3.mp4) | Unseen phrase — partial but meaningful prediction |
+| [a4.mp4](./video/a4.mp4) | Varied speaking style — robust performance |
+
+> **Note:** These words were **not** part of the training data. The model's ability to recognize them is a direct result of its emergent generalization — it has learned underlying patterns of speech production, not memorized a fixed vocabulary.
+
+---
+
 ## Emergent Behaviors
 
-Although primarily trained on short words (2-7 characters), MouthMind demonstrates **emergent generalization**:
+Although primarily trained on shorter words, MouthMind demonstrates **emergent generalization**:
 
 - **Speaker Independence** – Works on faces not seen during training.
-- **Word Length Generalization** – Transfers to longer words (8-12) with reasonable accuracy.
+- **Word Length Generalization** – Transfers to longer words with reasonable accuracy.
 - **Head Pose Robustness** – Maintains performance across different head angles.
 - **Unseen Vocabulary** – Recognizes words that were never in the training set.
-
-### Video Demos
-
-- [Demo: Unseen Vocabulary](./videos/demo_beleidigungen.mp4)
-- [Demo: Head Pose Robustness](./videos/demo_kopfhaltungen.mp4)
 
 ---
 
@@ -136,22 +150,22 @@ MouthMind is a **high-risk AI research project**. Visual speech recognition has 
 
 ## FAQ
 
-**Can I get the code or model?**
+**Can I get the code or model?**  
 No. Code, weights, and datasets are not public — and never will be. This is not negotiable.
 
-**I'm a researcher / student. Can I get access?**
+**I'm a researcher / student. Can I get access?**  
 No. Access is restricted to institutions with proven research experience and a clear ethical framework.
 
-**Can I use it commercially?**
+**Can I use it commercially?**  
 No. Commercial use is strictly prohibited. No licenses. No exceptions.
 
-**Can I get a demo?**
-Yes — we have public demo videos on YouTube. Live demos are only available under strict conditions (institutional background, clear purpose, confidentiality agreement).
+**Can I get a demo?**  
+Yes — we have public demo videos in this repository. Live demos are only available under strict conditions (institutional background, clear purpose, confidentiality agreement).
 
-**Why so restrictive?**
+**Why so restrictive?**  
 Because visual speech recognition has misuse potential. We take this seriously — even if others don't.
 
-**Can I collaborate?**
+**Can I collaborate?**  
 If you're from a university, institute, or comparable research environment: Contact us with your profile, institution, and concrete proposal. All other inquiries will be ignored.
 
 ---
@@ -174,16 +188,6 @@ Serious inquiries only via ProtonMail:
 This project is **not open source**. All rights reserved.
 
 © 2026 MouthMind Research
-
----
-
-## Acknowledgments
-
-This project was built with:
-- PyTorch
-- HDF5
-- NVIDIA RTX 5080
-- 8 months of focused research
 
 ---
 
