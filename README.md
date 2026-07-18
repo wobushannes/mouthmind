@@ -283,6 +283,12 @@ All rights reserved.
 
 © 2026 Johannes Wobus — MouthMind Research
 
+## Acknowledgments
+
+Thanks to the three people who reviewed this work — for their honesty, their questions, and their time.
+
+The rest was just me and the machine.
+
 ---
 
 *"We show what's possible — not how it's done."*
