@@ -12,6 +12,27 @@ Using a **multi-view fusion architecture** and a **Transformer decoder**, the mo
 
 ---
 
+## From Mesh to Mind: The Data Foundation
+
+This work builds on a **multilingual mesh-based VSR dataset** I introduced earlier ([`multilingual-mesh-vsr`](https://github.com/wobushannes/multilingual-mesh-vsr)). That dataset established the core principle: **pure geometric landmarks instead of pixels** – bias-free, dense, and speaker-agnostic.
+
+For MouthMind, I transitioned from **phoneme-level labels** to **character-level sequences**, enabling a more direct, word-based training paradigm while retaining the data's inherent advantages.
+
+**Key metrics of the underlying mesh dataset:**
+
+| Metric | Value |
+|--------|-------|
+| Total segments | 237,025 |
+| Unique speakers | 1,121 |
+| Total frames | 14.3M |
+| Feature dimension | 1,434 (3D landmarks + derivatives) |
+| Effective pixel equivalents | ~20.5T |
+| Phoneme coverage | ~22.9% of PHOIBLE 2.0 |
+
+This is the bias-free, high-density foundation that MouthMind builds upon. The dataset is not publicly available – it is a research asset.
+
+---
+
 ## Overview
 
 MouthMind is the result of an **eight-month solo research effort** by **Johannes Wobus**.
@@ -68,57 +89,31 @@ Crucially, the model is trained **without teacher forcing**. This means it never
 
 ## Results
 
-### Training Metrics
+### Training Logs
 
-| Metric | Value |
-|--------|-------|
-| Training Corpus | 300,000+ word clips |
-| Vocabulary | 1.5M+ characters |
-| Best Loss | **0.24** |
-| Best WER | 0.0 |
-| Best CER | 0.0 |
-| Letter Accuracy | >50% on unseen words |
+Raw training logs (JSON) are available in the [`stats/`](./stats) folder.
 
-### Loss Progression
+Selected logs include full prediction logs with WER, CER, and Letter Accuracy.
 
-![Loss Curve](./charts/loss.png)
+### Key Metrics
 
-*Loss decreases over 400 epochs, showing stable learning with characteristic "exploration spikes" as the model adapts to new word lengths. The model achieves a best loss of 0.24, demonstrating strong convergence.*
+| Metric | Best Value | Epoch |
+|--------|------------|-------|
+| Loss | 0.37 | 650 |
+| WER | 0.24 | 958 |
+| CER | 0.21 | 958 |
+| Letter Accuracy | 80.3% | 958 |
 
-### Example Predictions
+### Visualizations
 
-| Target | Prediction | Status |
-|--------|------------|--------|
-| ich | ich | ✅ |
-| der | der | ✅ |
-| aber | aber | ✅ |
+All training logs and visualizations are available in the [`charts/`](./charts) folder.
 
-### Discussion of Results
+### Video Demos
 
-The results demonstrate that MouthMind achieves strong performance on both seen and unseen vocabulary. The model consistently recognizes short, common words (such as "ich", "der", "aber") with perfect accuracy, while also showing meaningful partial recognition of longer, more complex words.
+Demo videos are available in the [`video/`](./video) folder.
 
-The **best loss of 0.24** is a significant achievement, indicating that the model has learned to generate character sequences with high confidence and accuracy. This is particularly noteworthy given the absence of teacher forcing and the model's reliance on visual input alone.
-
-The "exploration spikes" visible in the loss curve are characteristic of learning without teacher forcing — the model periodically explores new regions of the parameter space, leading to short-term increases in loss followed by rapid improvements. This behavior is a sign that the model is actively discovering new patterns rather than simply converging to a local minimum.
-
----
-
-## Video Demos
-
-The following videos demonstrate MouthMind's ability to generalize to **unseen vocabulary** — words that were **never part of the training set**.
-
-These tests were performed under varying head poses and speaking styles, showing the model's robustness and emergent understanding of visual speech patterns.
-
-> **Note:** The videos are provided as MP4 files. Please download them locally to view.
-
-| Video | Description |
-|-------|-------------|
-| [a1.mp4](./video/a1.mp4) | Unseen word — stable prediction |
-| [a2.mp4](./video/a2.mp4) | Different head angle — robust recognition |
-| [a3.mp4](./video/a3.mp4) | Unseen phrase — partial but meaningful output |
-| [a4.mp4](./video/a4.mp4) | Varied speaking style — consistent performance |
-
-> **Note:** These words were **not** part of the training data. The model's ability to recognize them is a direct result of its emergent generalization — it has learned underlying patterns of speech production, not memorized a fixed vocabulary.
+> **Note:** The overlay text in the videos is the model's **real-time prediction**.  
+> These are inference demos, not training data. The videos show the model's live prediction output during inference on unseen input.
 
 ---
 
@@ -252,7 +247,16 @@ No. We provide demo videos in this repository. Live demos are not available.
 Because visual speech recognition has misuse potential. We take this seriously — even if others don't.
 
 **Can I collaborate?**  
-If you're from a university, institute, or comparable research environment: Contact us with your profile, institution, and concrete proposal. All other inquiries will be ignored.
+Yes — if you're from a university, institute, or comparable research environment. Contact us with your profile, institution, and concrete proposal. All other inquiries will be ignored.
+
+**I'm from a law enforcement or security agency.**  
+We take legitimate security inquiries seriously. Contact us with your credentials and a formal request.
+
+**Can I discuss the research with you?**  
+Yes — in academic or policy contexts. Contact us with a clear proposal.
+
+**Can I hire you as a consultant?**  
+We offer consulting and research collaboration for institutions with a clear ethical framework. Contact us for details.
 
 ---
 
