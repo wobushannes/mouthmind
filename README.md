@@ -12,6 +12,32 @@ Using a **multi-view fusion architecture** and a **Transformer decoder**, the mo
 
 ---
 
+## Data Acquisition & Preprocessing
+
+MouthMind operates exclusively on **geometric facial markers** during training and inference — no audio, no pixels, no spectrograms are used as model input.
+
+**How the data is created:**
+
+1. Raw video is captured.
+2. A **facial landmark detector** extracts 3D coordinates from each frame.
+3. Simultaneously, **Whisper** (or a similar ASR system) transcribes the audio track to generate ground truth text.
+4. The text is aligned with the video frames to create labeled marker sequences.
+
+**What the model sees during training:**
+- 3D facial landmarks (x, y, z coordinates)
+- Temporal sequences of these landmarks
+- Derived features (velocity, acceleration, local curvature)
+
+**What the model NEVER sees:**
+- Raw audio signals
+- Spectrograms or any acoustic features
+- Raw pixel data (RGB frames, grayscale images)
+- Optical flow or motion vectors
+
+This ensures that the model learns **pure visemic patterns** — the geometric movements of speech — without being contaminated by acoustic or appearance-based shortcuts. The audio is used only as a **labeling tool**, not as a learning signal.
+
+---
+
 ## From Mesh to Mind: The Data Foundation
 
 This work builds on a **multilingual mesh-based VSR dataset** I introduced earlier ([`multilingual-mesh-vsr`](https://github.com/wobushannes/multilingual-mesh-vsr)). That dataset established the core principle: **pure geometric landmarks instead of pixels** – bias-free, dense, and speaker-agnostic.
