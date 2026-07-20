@@ -1,0 +1,170 @@
+{
+  "model_type": "mvib_seq2seq_final",
+  "mode": "full_face",
+  "model_mode": "seq2seq",
+  "teacher_forcing": 0.0,
+  "active_views": {
+    "raw": true,
+    "rp": true,
+    "mouth": true,
+    "eyes": true,
+    "jaw": true,
+    "head": true,
+    "lip_area": true,
+    "asymmetry": true
+  },
+  "history": [
+    {
+      "epoch": 987,
+      "train_loss": 0.7648621610232762,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T21:58:36.969393"
+    },
+    {
+      "epoch": 988,
+      "train_loss": 0.7692507755188714,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T21:59:24.524026"
+    },
+    {
+      "epoch": 989,
+      "train_loss": 0.7585481961568197,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:00:13.234746"
+    },
+    {
+      "epoch": 990,
+      "train_loss": 0.7619843153726487,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:01:01.329803"
+    },
+    {
+      "epoch": 991,
+      "train_loss": 0.7509662077540443,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:01:49.383105"
+    },
+    {
+      "epoch": 992,
+      "train_loss": 0.7592455903689067,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:02:36.334445"
+    },
+    {
+      "epoch": 993,
+      "train_loss": 0.7568471193313598,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:03:23.255468"
+    },
+    {
+      "epoch": 994,
+      "train_loss": 0.7530395328998566,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:04:13.048384"
+    },
+    {
+      "epoch": 995,
+      "train_loss": 0.7588972460655939,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:05:02.322875"
+    },
+    {
+      "epoch": 996,
+      "train_loss": 0.7560815374056499,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:05:50.919214"
+    },
+    {
+      "epoch": 997,
+      "train_loss": 0.750567649091993,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:06:38.882450"
+    },
+    {
+      "epoch": 998,
+      "train_loss": 0.7567130514553615,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:07:27.824761"
+    },
+    {
+      "epoch": 999,
+      "train_loss": 0.7601533021245684,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:08:16.361560"
+    },
+    {
+      "epoch": 1000,
+      "train_loss": 0.7545020001275199,
+      "train_wer": 1.0,
+      "train_cer": 1.0,
+      "train_letter_accuracy": 0.0,
+      "lr": 0.0003,
+      "teacher_forcing": 0.0,
+      "timestamp": "2026-07-20T22:09:05.814161"
+    }
+  ],
+  "config": {
+    "hidden_size": 128,
+    "batch_size": 128,
+    "learning_rate": 0.0003,
+    "dropout": 0.3,
+    "use_fp16": true,
+    "use_torch_compile": false,
+    "grad_clip": 1.0,
+    "label_prior_weight": 0.0,
+    "teacher_forcing": 0.0,
+    "cache_ram_mb": 4096
+  }
+}
