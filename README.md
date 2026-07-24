@@ -293,6 +293,12 @@ We offer consulting and research collaboration for institutions with a clear eth
 
 ---
 
+## Architecture
+
+For a detailed overview of the MouthMind architecture — including the multi-view fusion, dynamic reweighting, and decoder design — see the [Architecture Overview](./ARCHITECTURE.md).
+
+--- 
+
 ## Contact
 
 Serious inquiries only.
