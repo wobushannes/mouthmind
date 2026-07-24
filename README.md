@@ -286,9 +286,10 @@ We offer consulting and research collaboration for institutions with a clear eth
 
 ---
 
-## Technical FAQ
+## FAQs
 
-For detailed technical answers — architecture, data, training, and model behavior — see the [Technical FAQ](./TECHNICAL_FAQ.md).
+- [Technical FAQ](./TECHNICAL_FAQ.md) – Architecture, data, training, model behavior.
+- [Pedagogical FAQ](./PEDAGOGICAL_FAQ.md) – The learning principles behind the system.
 
 ---
 
