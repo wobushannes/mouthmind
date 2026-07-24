@@ -286,6 +286,12 @@ We offer consulting and research collaboration for institutions with a clear eth
 
 ---
 
+## Technical FAQ
+
+For detailed technical answers — architecture, data, training, and model behavior — see the [Technical FAQ](./TECHNICAL_FAQ.md).
+
+---
+
 ## Contact
 
 Serious inquiries only.
